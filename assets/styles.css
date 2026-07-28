@@ -1,3 +1,4 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
 /*
  * Space GNC · CDC 2026
  * Site styles
@@ -2665,11 +2666,14 @@ button {
   color: #daeaec45;
 }
 .lightning-details span {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.45;
 }
 .round-label {
-  font-size: 11px;
+  font-size: 12px;
+}
+.coming-soon {
+  font-size: 9px;
 }
 .organizer-index {
   font-size: 12px;
