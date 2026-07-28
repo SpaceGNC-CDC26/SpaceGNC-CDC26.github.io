@@ -58,8 +58,10 @@
     <script>
       const updateFrames = () => {
         const section = window.location.hash || "#top";
-        document.querySelector("#tablet").src = `./preview-july.html${section}`;
-        document.querySelector("#phone").src = `./preview-july.html${section}`;
+        document.querySelector("#tablet").src =
+          `./preview-july.html?v=20260728-2${section}`;
+        document.querySelector("#phone").src =
+          `./preview-july.html?v=20260728-2${section}`;
       };
 
       window.addEventListener("hashchange", updateFrames);
