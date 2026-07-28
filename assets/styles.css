@@ -2461,29 +2461,29 @@ button {
 }
 .scroll-cue {
   color: #cce6e878;
-  font-size: 10px;
+  font-size: 11px;
 }
 .orbit-label {
   color: #cae7e9a6;
-  font-size: 11px;
+  font-size: 12px;
 }
 .mission-card-head {
   color: #cce6e8ad;
-  font-size: 10px;
+  font-size: 11px;
 }
 .mission-labels {
   color: #cce6e887;
-  font-size: 9px;
+  font-size: 10px;
 }
 .signal-strip {
   grid-template-columns: repeat(3, 1fr);
 }
 .signal-strip span {
   color: #e0edefa8;
-  font-size: 11px;
+  font-size: 12px;
 }
 .theme-kicker {
-  font-size: 11px;
+  font-size: 12px;
 }
 .theme-description {
   color: #ddebeca6;
@@ -2493,11 +2493,11 @@ button {
 }
 .theme-card li {
   padding: 7px 11px;
-  font-size: 10px;
+  font-size: 11px;
   line-height: 1.35;
 }
 .micro-label {
-  font-size: 11px;
+  font-size: 12px;
 }
 .scope-copy > p:last-child {
   color: #ddebec9c;
@@ -2514,7 +2514,7 @@ button {
 }
 .scope-node small {
   color: #d5e8ea85;
-  font-size: 9px;
+  font-size: 10px;
   line-height: 1.45;
 }
 .speaker-title {
@@ -2635,14 +2635,14 @@ button {
 .agenda-time-lockup small,
 .agenda-time-lockup span {
   color: #cee8ea8f;
-  font-size: 10px;
+  font-size: 11px;
 }
 .agenda-block-heading span {
-  font-size: 10px;
+  font-size: 11px;
 }
 .agenda-table-head {
   color: #cfe7e982;
-  font-size: 10px;
+  font-size: 11px;
 }
 .agenda-time {
   font-size: 11px;
@@ -2665,11 +2665,11 @@ button {
   color: #daeaec45;
 }
 .lightning-details span {
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.45;
 }
 .round-label {
-  font-size: 10px;
+  font-size: 11px;
 }
 .organizer-index {
   font-size: 12px;
@@ -2705,7 +2705,7 @@ button {
 }
 .footer-meta {
   color: #e1eeefa1;
-  font-size: 10px;
+  font-size: 11px;
 }
 @media (max-width: 840px) {
   .signal-strip {
