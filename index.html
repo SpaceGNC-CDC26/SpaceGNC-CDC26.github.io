@@ -20,60 +20,6 @@
     <meta property="og:type" content="website" />
     <link rel="icon" href="./favicon.svg" />
     <link rel="stylesheet" href="./assets/styles.css?v=20260728-3" />
-    <style>
-      .lightning .lightning-apply-actions {
-        margin-top: 24px;
-      }
-      .lightning .lightning-apply-link {
-        color: #2f6f77;
-        border-bottom: 1px solid #2f6f7740;
-        padding-bottom: 4px;
-        font-family: var(--font-geist-mono), monospace;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        font-size: 9px;
-        font-weight: 700;
-        transition:
-          color 0.18s,
-          border-color 0.18s;
-      }
-      .lightning .lightning-apply-link:focus-visible,
-      .lightning .lightning-apply-link:hover {
-        color: #9a744b;
-        border-color: #9a744b;
-      }
-      .lightning-registration {
-        margin-top: 72px;
-        padding-top: 56px;
-        border-top: 1px solid var(--line-light);
-      }
-      .lightning-registration-copy {
-        max-width: 760px;
-      }
-      .lightning-form-shell {
-        max-width: 900px;
-        margin: 32px auto 0;
-        overflow: hidden;
-        background: #f0ebf8;
-        border: 1px solid var(--line-light);
-      }
-      .lightning-form-frame {
-        display: block;
-        width: 100%;
-        height: 1100px;
-        border: 0;
-        background: #f0ebf8;
-      }
-      @media (max-width: 600px) {
-        .lightning-registration {
-          margin-top: 54px;
-          padding-top: 42px;
-        }
-        .lightning-form-frame {
-          height: 1180px;
-        }
-      }
-    </style>
   </head>
   <body>
     <div hidden=""><!--$--><!--/$--></div>
@@ -237,17 +183,16 @@
                   </p>
                   <p>
                     Please provide your contact information, affiliation, talk
-                    title, and a short abstract using the submission form below.
+                    title, and a short abstract using the lightning-talk
+                    submission form.
                   </p>
                   <div class="update-actions">
-                    <a href="#lightning-registration"
-                      >Submit a lightning talk
-                      <span aria-hidden="true">↓</span></a
-                    ><a
+                    <a
                       href="https://docs.google.com/forms/d/e/1FAIpQLSc20-xvQp_w1fAsRW4aa1MGWbubitI67Ceor7S-6sH-8-mn-Q/viewform"
                       target="_blank"
                       rel="noopener noreferrer"
-                      >Open Google Form <span aria-hidden="true">↗</span></a
+                      >Submit a lightning talk
+                      <span aria-hidden="true">↗</span></a
                     >
                   </div>
                 </div>
@@ -828,75 +773,40 @@
         </section>
         <!-- Graduate student and postdoctoral lightning talks -->
         <section class="lightning section-light" id="lightning">
-          <div class="section-frame">
-            <div class="lightning-grid">
-              <div class="lightning-orbit" aria-hidden="true">
-                <span class="lightning-core">LT</span
-                ><span class="lightning-ring ring-a"><i></i></span
-                ><span class="lightning-ring ring-b"><i></i></span
-                ><span class="round-label round-one">ROUND 01</span
-                ><span class="round-label round-two">ROUND 02</span>
-              </div>
-              <div class="lightning-copy">
-                <p class="section-kicker"><span>05</span> Lightning talks</p>
-                <h2>Graduate student and<br />postdoctoral lightning talks.</h2>
-                <p class="lightning-lede">
-                  Two dedicated lightning-talk sessions will spotlight emerging
-                  work from graduate students and postdoctoral researchers.
-                </p>
-                <div class="lightning-details">
-                  <div>
-                    <strong>Round 01</strong><span>11:30 AM – 12:00 PM</span>
-                  </div>
-                  <div>
-                    <strong>Round 02</strong><span>5:00 PM – 5:25 PM</span>
-                  </div>
-                </div>
-                <p class="coming-soon">
-                  <i></i> Submissions are now open for PhD students and
-                  postdoctoral researchers.
-                </p>
-                <div class="hero-actions lightning-apply-actions">
-                  <a class="button button-primary" href="#lightning-registration"
-                    >Submit a lightning talk <span aria-hidden="true">↓</span></a
-                  ><a
-                    class="lightning-apply-link"
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSc20-xvQp_w1fAsRW4aa1MGWbubitI67Ceor7S-6sH-8-mn-Q/viewform"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Open form in a new tab <span aria-hidden="true">↗</span></a
-                  >
-                </div>
-              </div>
+          <div class="section-frame lightning-grid">
+            <div class="lightning-orbit" aria-hidden="true">
+              <span class="lightning-core">LT</span
+              ><span class="lightning-ring ring-a"><i></i></span
+              ><span class="lightning-ring ring-b"><i></i></span
+              ><span class="round-label round-one">ROUND 01</span
+              ><span class="round-label round-two">ROUND 02</span>
             </div>
-            <div id="lightning-registration" class="lightning-registration">
-              <div class="lightning-copy lightning-registration-copy">
-                <p class="section-kicker"><span>+</span> Now accepting submissions</p>
-                <h2>Submit your proposed lightning talk.</h2>
-                <p class="lightning-lede">
-                  Open to PhD students and postdoctoral researchers. Please
-                  provide your name, email, affiliation, position, proposed talk
-                  title, and a short abstract.
-                </p>
+            <div class="lightning-copy">
+              <p class="section-kicker"><span>05</span> Lightning talks</p>
+              <h2>Graduate student and<br />postdoctoral lightning talks.</h2>
+              <p class="lightning-lede">
+                Two dedicated lightning-talk sessions will spotlight emerging
+                work from graduate students and postdoctoral researchers.
+              </p>
+              <div class="lightning-details">
+                <div>
+                  <strong>Round 01</strong><span>11:30 AM – 12:00 PM</span>
+                </div>
+                <div>
+                  <strong>Round 02</strong><span>5:00 PM – 5:25 PM</span>
+                </div>
+              </div>
+              <p class="coming-soon">
+                <i></i> Submissions are now open for PhD students and
+                postdoctoral researchers.
+              </p>
+              <div class="hero-actions" style="margin-top: 24px">
                 <a
-                  class="lightning-apply-link"
+                  class="button button-primary"
                   href="https://docs.google.com/forms/d/e/1FAIpQLSc20-xvQp_w1fAsRW4aa1MGWbubitI67Ceor7S-6sH-8-mn-Q/viewform"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Prefer a separate window? Open the Google Form
-                  <span aria-hidden="true">↗</span></a
-                >
-              </div>
-              <div class="lightning-form-shell">
-                <iframe
-                  class="lightning-form-frame"
-                  src="https://docs.google.com/forms/d/e/1FAIpQLSc20-xvQp_w1fAsRW4aa1MGWbubitI67Ceor7S-6sH-8-mn-Q/viewform?embedded=true"
-                  frameborder="0"
-                  marginheight="0"
-                  marginwidth="0"
-                  loading="lazy"
-                  title="CDC 2026 Lightning Talk Sign-Up"
-                  >Loading…</iframe
+                  >Submit a lightning talk <span aria-hidden="true">↗</span></a
                 >
               </div>
             </div>
