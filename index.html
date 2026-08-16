@@ -20,6 +20,60 @@
     <meta property="og:type" content="website" />
     <link rel="icon" href="./favicon.svg" />
     <link rel="stylesheet" href="./assets/styles.css?v=20260728-3" />
+    <style>
+      .lightning .lightning-apply-actions {
+        margin-top: 24px;
+      }
+      .lightning .lightning-apply-link {
+        color: #2f6f77;
+        border-bottom: 1px solid #2f6f7740;
+        padding-bottom: 4px;
+        font-family: var(--font-geist-mono), monospace;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        font-size: 9px;
+        font-weight: 700;
+        transition:
+          color 0.18s,
+          border-color 0.18s;
+      }
+      .lightning .lightning-apply-link:focus-visible,
+      .lightning .lightning-apply-link:hover {
+        color: #9a744b;
+        border-color: #9a744b;
+      }
+      .lightning-registration {
+        margin-top: 72px;
+        padding-top: 56px;
+        border-top: 1px solid var(--line-light);
+      }
+      .lightning-registration-copy {
+        max-width: 760px;
+      }
+      .lightning-form-shell {
+        max-width: 900px;
+        margin: 32px auto 0;
+        overflow: hidden;
+        background: #f0ebf8;
+        border: 1px solid var(--line-light);
+      }
+      .lightning-form-frame {
+        display: block;
+        width: 100%;
+        height: 1100px;
+        border: 0;
+        background: #f0ebf8;
+      }
+      @media (max-width: 600px) {
+        .lightning-registration {
+          margin-top: 54px;
+          padding-top: 42px;
+        }
+        .lightning-form-frame {
+          height: 1180px;
+        }
+      }
+    </style>
   </head>
   <body>
     <div hidden=""><!--$--><!--/$--></div>
@@ -802,11 +856,11 @@
                   <i></i> Submissions are now open for PhD students and
                   postdoctoral researchers.
                 </p>
-                <div class="hero-actions" style="margin-top: 24px">
+                <div class="hero-actions lightning-apply-actions">
                   <a class="button button-primary" href="#lightning-registration"
                     >Submit a lightning talk <span aria-hidden="true">↓</span></a
                   ><a
-                    class="text-link"
+                    class="lightning-apply-link"
                     href="https://docs.google.com/forms/d/e/1FAIpQLSc20-xvQp_w1fAsRW4aa1MGWbubitI67Ceor7S-6sH-8-mn-Q/viewform"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -815,12 +869,9 @@
                 </div>
               </div>
             </div>
-            <div
-              id="lightning-registration"
-              style="margin-top: 72px; padding-top: 56px; border-top: 1px solid var(--line-light)"
-            >
-              <div class="lightning-copy" style="max-width: 760px">
-                <p class="section-kicker"><span>APPLY</span> Now accepting submissions</p>
+            <div id="lightning-registration" class="lightning-registration">
+              <div class="lightning-copy lightning-registration-copy">
+                <p class="section-kicker"><span>+</span> Now accepting submissions</p>
                 <h2>Submit your proposed lightning talk.</h2>
                 <p class="lightning-lede">
                   Open to PhD students and postdoctoral researchers. Please
@@ -828,7 +879,7 @@
                   title, and a short abstract.
                 </p>
                 <a
-                  class="text-link"
+                  class="lightning-apply-link"
                   href="https://docs.google.com/forms/d/e/1FAIpQLSc20-xvQp_w1fAsRW4aa1MGWbubitI67Ceor7S-6sH-8-mn-Q/viewform"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -836,19 +887,15 @@
                   <span aria-hidden="true">↗</span></a
                 >
               </div>
-              <div
-                style="max-width: 900px; margin: 32px auto 0; overflow: hidden; background: #f0ebf8; border: 1px solid var(--line-light)"
-              >
+              <div class="lightning-form-shell">
                 <iframe
+                  class="lightning-form-frame"
                   src="https://docs.google.com/forms/d/e/1FAIpQLSc20-xvQp_w1fAsRW4aa1MGWbubitI67Ceor7S-6sH-8-mn-Q/viewform?embedded=true"
-                  width="100%"
-                  height="1100"
                   frameborder="0"
                   marginheight="0"
                   marginwidth="0"
                   loading="lazy"
                   title="CDC 2026 Lightning Talk Sign-Up"
-                  style="display: block; border: 0; background: #f0ebf8"
                   >Loading…</iframe
                 >
               </div>
