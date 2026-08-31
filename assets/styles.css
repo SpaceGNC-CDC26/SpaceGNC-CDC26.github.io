@@ -3067,6 +3067,31 @@ button {
   font-size: 13px;
   line-height: 1.75;
 }
+.lightning-talk-list {
+  display: grid;
+  gap: 0;
+}
+.lightning-talk-entry {
+  padding: 23px 0 25px;
+}
+.lightning-talk-entry:first-child {
+  padding-top: 0;
+}
+.lightning-talk-entry + .lightning-talk-entry {
+  border-top: 1px solid #bce0e217;
+}
+.lightning-talk-entry h4 {
+  color: #eef6f7;
+  max-width: 900px;
+  margin: 0 0 13px;
+  font-family:
+    Georgia,
+    Times New Roman,
+    serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+}
 .agenda-session-label {
   color: var(--amber);
   margin-bottom: 5px;
@@ -3077,6 +3102,48 @@ button {
   line-height: 1.3;
   text-transform: uppercase;
   display: block;
+}
+
+.lightning-speaker-list {
+  max-width: 510px;
+  margin: 27px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.lightning-copy {
+  min-width: 0;
+}
+.lightning-speaker-list li {
+  border-top: 1px solid var(--line-light);
+  grid-template-columns: 28px minmax(0, 1fr);
+  padding: 15px 0;
+  display: grid;
+}
+.lightning-speaker-list li::before {
+  color: #9a744b;
+  content: counter(list-item, decimal-leading-zero);
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 8px;
+  padding-top: 3px;
+}
+.lightning-speaker-list strong,
+.lightning-speaker-list span {
+  grid-column: 2;
+}
+.lightning-speaker-list strong {
+  color: #22323b;
+  font-family:
+    Georgia,
+    Times New Roman,
+    serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+.lightning-speaker-list span {
+  color: #697277;
+  margin-top: 5px;
+  font-size: 11px;
+  line-height: 1.45;
 }
 
 .organizer-avatar {
@@ -3101,6 +3168,14 @@ button {
   }
 }
 @media (max-width: 560px) {
+  .lightning-grid {
+    grid-template-columns: minmax(0, 1fr);
+    min-width: 0;
+  }
+  .lightning-orbit {
+    width: 100%;
+    max-width: 420px;
+  }
   .speaker-card {
     min-height: 290px;
   }
@@ -3119,6 +3194,9 @@ button {
   .agenda-details-body .talk-abstract {
     font-size: 12px;
     line-height: 1.7;
+  }
+  .lightning-talk-entry h4 {
+    font-size: 16px;
   }
   .organizer-avatar {
     margin-top: 28px;
